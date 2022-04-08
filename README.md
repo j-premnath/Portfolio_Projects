@@ -1,4 +1,25 @@
-# Portfolio_Projects
-It’s a real estate price prediction project. I have built a machine learning model that can predict the property price in Bangalore based on certain 
-features such as sq. ft, bedroom, bathroom, location etc. I have used the home price dataset for Bangalore city from Kaggle.com. In this project I used 
-python as a programming language, Jupyter notebook as IDE, NumPy and pandas for data cleaning, matplotlib for data visualization, sklearn for model building. 
+# Stroke Prediction
+
+I have used the Stroke Prediction Dataset from Kaggle. Built a machine learning model that able to predict the chances of stroke based on certain features like gender, age, glucose level, BMI, smoking status, other comorbidities, etc. Replaced the NAN values by calculating the median score. Removed the Outliers from the dataset using Z score. Converted the Object type features in the dataset to int type using Label Encoder. The data is highly imbalanced for the target variable, which was addresssed using SMOTE technique.
+
+Classification report for the SVM model:
+
+              precision    recall  f1-score   support
+
+           0       0.81      0.73      0.77       953
+           1       0.75      0.83      0.79       953
+
+    accuracy                           0.78      1906
+   macro avg       0.78      0.78      0.78      1906
+weighted avg       0.78      0.78      0.78      1906
+
+Classification report for the Random Forest model:
+
+              precision    recall  f1-score   support
+
+           0       0.93      0.92      0.92       953
+           1       0.92      0.93      0.92       953
+
+    accuracy                           0.92      1906
+   macro avg       0.92      0.92      0.92      1906
+weighted avg       0.92      0.92      0.92      1906
